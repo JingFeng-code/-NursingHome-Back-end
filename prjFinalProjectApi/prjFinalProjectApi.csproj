@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="wwwroot\barcodes\**" />
+    <Compile Remove="wwwroot\barcode\**" />
+    <Content Remove="wwwroot\barcodes\**" />
+    <Content Remove="wwwroot\barcode\**" />
+    <EmbeddedResource Remove="wwwroot\barcodes\**" />
+    <EmbeddedResource Remove="wwwroot\barcode\**" />
+    <None Remove="wwwroot\barcodes\**" />
+    <None Remove="wwwroot\barcode\**" />
+  </ItemGroup>
+
+
+
+  <ItemGroup>
+    <PackageReference Include="EPPlus" Version="8.1.0" />
+    <PackageReference Include="Google.Apis.Auth" Version="1.70.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.Google" Version="9.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="9.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OAuth" Version="2.3.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="9.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="9.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.13.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="9.0.0" />
+    <PackageReference Include="PayPalCheckoutSdk" Version="1.0.4" />
+    <PackageReference Include="PayPalServerSDK" Version="1.1.1" />
+    <PackageReference Include="PDFsharp" Version="6.2.1" />
+    <PackageReference Include="SixLabors.ImageSharp" Version="3.1.11" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="9.0.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.13.1" />
+    <PackageReference Include="ZXing.Net" Version="0.16.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+
+    <Folder Include="wwwroot\images\community\board\" />
+
+    <Folder Include="wwwroot\images\community\userprofiles\" />
+    <Folder Include="wwwroot\images\community\post\" />
+
+    <Folder Include="wwwroot\images\members\" />
+    <Folder Include="wwwroot\images\events\" />
+    <Folder Include="wwwroot\images\shops\ShopProductThumb\" />
+    <Folder Include="wwwroot\images\shops\ShopProductLarge\" />
+    <Folder Include="wwwroot\images\stores\" />
+    <Folder Include="wwwroot\qrcodes\" />
+  </ItemGroup>
+
+</Project>
