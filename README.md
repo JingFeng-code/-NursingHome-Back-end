@@ -3,7 +3,6 @@
 
 ## **後端 README.md 範例 (ASP.NET Core Web API + AI / NLP)**
 
-```markdown
 # 安養院社群系統 - 後端 (ASP.NET Core Web API)
 
 > 提供前端 RESTful API、即時通訊與 AI 客服能力，整合 Qdrant 向量資料庫與 Ollama LLM。
