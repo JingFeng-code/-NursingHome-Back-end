@@ -47,3 +47,4 @@ backend/
 ├─ Hubs/          # SignalR 即時通訊
 ├─ Helpers/       # 輔助工具類別 (共用函式、驗證、Token 產生等)
 └─ README.md
+```
